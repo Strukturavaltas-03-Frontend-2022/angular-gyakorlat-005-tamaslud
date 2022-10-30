@@ -1,0 +1,24 @@
+<div class="row">
+  <div class="col-12 mb-1 pt-1 pb-1 d-flex justify-content-between">
+    <app-data-cell>{{dataRow.id}}</app-data-cell>
+    <app-data-cell>{{dataRow.name}}</app-data-cell>
+    <app-data-cell>{{dataRow.email}}</app-data-cell>
+    <app-data-cell>{{dataRow.address}}</app-data-cell>
+    <app-data-cell>{{dataRow.active}}</app-data-cell>
+
+    <app-action-button-group
+      (selectClick)="onSelectClicked()"
+      (updateClick)="onUpdateClicked()"
+      (deleteClick)="onDeleteClicked()"
+    ></app-action-button-group>
+  </div>
+</div>
+<!--
+  {
+    id: 1,
+    name: 'Tades Casterot',
+    email: 'tcasterot0@sakura.ne.jp',
+    address: '41 Heffernan Avenue',
+    active: false
+  }
+-->
